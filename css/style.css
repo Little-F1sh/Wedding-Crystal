@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-bg {
+    width: 1990px;
+    margin: auto;
+}
+.container {
+    width: 1290px;
+    margin: auto;
+}
+/* logo */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 645px;
+    right: 645px;
+    cursor: pointer;
+    
+}
+.logo img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* navbar section */
+.Navbar {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 150px;
+}
+.Navbar li {
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+.Navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.Navbar li:hover {
+    border-top: 3px solid black;
+    transition: all 0.2s ease-out;
+}
+.Navbar li:active {
+    border-top: 3px solid black;
+}
+
+.active {
+    border-top: 3px solid black;
+}
+
+
+/* slider-section */
+.mySlides {
+    display: none;
+}
+.mySlides img {
+  vertical-align: bottom;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
