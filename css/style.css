@@ -2,84 +2,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container-bg {
-    width: 1990px;
-    margin: auto;
-}
-.container {
-    width: 1290px;
-    margin: auto;
-}
-/* logo */
-.logo {
-    position: absolute;
-    top: 40px;
-    left: 645px;
-    right: 645px;
-    cursor: pointer;
-    
-}
-.logo img{
-    display: block;
-    margin: 0 auto;
-}
-
-
-/* navbar section */
-.Navbar {
+  }
+  .container-bg {
     width: 100%;
-    background-color: #FFF;
+  }
+  .container {
+    width: 1280px;
+    margin: auto;
+  }
+
+  /* header section */
+  header {
+    padding: 10px 20px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .main-head {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding-top: 150px;
-}
-.Navbar li {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav ul {
+    display: flex;
     list-style: none;
-    width: 15%;
-    text-align: center;
-    padding: 30px 0;
-    transition: all 0.3s ease;
-}
-.Navbar li a {
+  }
+  .nav ul li {
+    padding: 5px 10px;
+    border: none;
+    display: inline-block;
+    transition: all linear 0.5s;
+    margin-right: 20px;
+  }
+  .nav ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-.Navbar li:hover {
-    border-top: 3px solid black;
-    transition: all 0.2s ease-out;
-}
-.Navbar li:active {
-    border-top: 3px solid black;
-}
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 5px;
+  }
 
-.active {
-    border-top: 3px solid black;
-}
-
-
-/* slider-section */
-.mySlides {
+  /* slider-section */
+  .mySlides {
     display: none;
-}
-.mySlides img {
-  vertical-align: bottom;
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
-}
+  }
+  .mySlides img {
+    vertical-align: bottom;
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
 
-.slideshow-container {
+  .slideshow-container {
     position: relative;
     margin: auto;
-}
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
+  }
+
+  /* section */
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
